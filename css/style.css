@@ -1,0 +1,75 @@
+:root {
+  --color-gold: #EDA35B;
+  --color-black: #161616;
+  --color-grey: #f5f5f5;
+}
+body {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+}
+.dark-theme {
+  --color-black: #f5f5f5;
+  --color-grey: #161616;
+}
+
+.logo {
+  height: 5rem;
+  width: auto;
+}
+
+.btn-search {
+  background-color: var(--color-gold);
+  color: var(--color-black);
+  height: 2.4rem;
+  width: 3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.input-search {
+  width: 15rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.input-search:focus {
+  box-shadow: 0 0 0 0.2rem #eda45b7e;
+}
+
+i {
+  color: var(--color-black);
+}
+
+.nav-link {
+  padding-right: 0.2rem;
+  text-decoration: none;
+  color: var(--color-black);
+}
+.nav-link:hover {
+  color: var(--color-gold);
+}
+.nav-link:focus {
+  box-shadow: 0 0 0 0.2rem #eda45b7e;
+}
+
+nav {
+  box-shadow: 10px 3px 7px rgba(142, 142, 143, 0.2);
+}
+
+.btn-shop {
+  background-color: var(--color-black);
+  color: var(--color-grey);
+}
+.btn-shop:hover {
+  color: var(--color-grey);
+}
+.btn-shop:focus {
+  box-shadow: 0 0 0 0.2rem #eda45b7e;
+}
+
+#icon-dark-mode {
+  width: 30px;
+  cursor: pointer;
+  padding-left: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */
