@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap%27');
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
 :root {
     --color-gold: #EDA35B;
     --color-black: #161616;
@@ -11,6 +15,10 @@
 }
 #logo {
     height: 4rem;
+    width: auto;
+}
+#logo-footer {
+    height: 8rem;
     width: auto;
 }
 .btn-search {
@@ -32,6 +40,9 @@
 i {
     color: var(--color-black)
 }
+a i {
+    color : var(--color-grey)
+}
 .nav-link {
     padding-right: 0.2rem;
     text-decoration: none;
@@ -49,6 +60,18 @@ nav {
 .btn-shop {
     background-color: var(--color-black);
     color:  var(--color-grey);
+    border-radius: 2.25rem;
+    &:hover {
+        color:  var(--color-grey);
+    }
+    &:focus {
+        box-shadow: 0 0 0 0.2rem #eda45b7e;
+    }
+}
+.btn-heart {
+    background-color: var(--color-gold);
+    color:  var(--color-grey);
+    border-radius: 2.25rem;
     &:hover {
         color:  var(--color-grey);
     }
@@ -60,4 +83,11 @@ nav {
     width: 30px;
     cursor: pointer;
     padding-left: 0.7rem;
+}
+.newsletter-input {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.social-media-icon {
+    color: var(--color-gold);
 }
