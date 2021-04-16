@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap%27");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300&display=swap");
 body {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Work Sans", sans-serif;
   background-color: var(--color-grey);
   color: var(--color-black);
 }
@@ -49,7 +49,7 @@ i {
 }
 
 a i {
-  color: var(--color-grey);
+  color: var(--color-black);
 }
 
 .nav-link {
@@ -114,6 +114,49 @@ nav {
 
 .card-title {
   font-weight: bolder;
+}
+
+.product-image {
+  height: 100px;
+  width: 100px;
+}
+
+.fa-minus-circle, .fa-plus-circle {
+  color: var(--color-gold);
+}
+
+.fa-trash-alt {
+  color: #dc3545;
+}
+
+.btn-confirm-cart {
+  background-color: var(--color-black);
+  color: var(--color-grey);
+  border-radius: 2.25rem;
+  width: 25rem;
+}
+.btn-confirm-cart:hover {
+  color: var(--color-grey);
+}
+.btn-confirm-cart:focus {
+  box-shadow: 0 0 0 0.2rem #1414147e;
+}
+
+.btn-delete-cart {
+  background-color: var(--color-gold);
+  color: var(--color-grey);
+  border-radius: 2.25rem;
+  width: 25rem;
+}
+.btn-delete-cart:hover {
+  color: var(--color-grey);
+}
+.btn-delete-cart:focus {
+  box-shadow: 0 0 0 0.2rem #eda45b7e;
+}
+
+.my-footer {
+  box-shadow: 10px 3px 20px rgba(142, 142, 143, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */

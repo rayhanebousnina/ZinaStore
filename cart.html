@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ZinaStore</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light pr-5">
+        <div class="container-fluid d-flex justify-content-between">
+          <div class="child1">
+            <a class="navbar-brand" href="products.html"
+              ><img class="logo" src="images/logo-bg-blanc.png" id="logo" alt=""
+            /></a>
+          </div>
+          <div class="child2">
+            <form class="form-inline my-2 my-lg-0">
+              <input
+                class="form-control mr-sm-2 input-search"
+                type="search"
+                placeholder="Search product"
+                aria-label="Search"
+              />
+              <button class="btn my-2 my-sm-0 btn-search" type="submit">
+                <i class="fas fa-search fa-3a"></i>
+              </button>
+            </form>
+          </div>
+          <div class="child3">
+            <i class="fas fa-user pr-3"></i>
+            <i class="fas fa-heart pr-3"></i>
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i><span class="badge badge-danger">0</span></a>
+            <img src="images/moon.png" alt="" id="icon-dark-mode" />
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid d-flex justify-content-center">
+          <a href="" class="nav-link">ACCUEIL</a>
+          <a href="" class="nav-link">CATEGORIES</a>
+          <a href="" class="nav-link">PRODUITS</a>
+          <a href="" class="nav-link">MEILLEURES VENTES</a>
+        </div>
+      </nav>
+      <!--./Navbar-->
+
+
+
+      <!--Products in cart-->
+
+      <div class="container-fluid products-container my-5">
+          <div class="row product-header">
+              <div class="col-md-2 product-image"></div>
+              <div class="col-md-3 product-title">Produit</div>
+              <div class="col-md-2 product-price">Prix unitaire</div>
+              <div class="col-md-2 quantity">Quantité</div>
+              <div class="col-md-2 subtotal">Sous total</div>
+              <div class="col-md-1 delete-item"></div>
+          </div>
+      </div>
+      
+      <!--./Products in cart-->
+
+
+    <!--BasketTotalContainer-->
+    <div class="container-fluid basketTotalContainer my-5">
+       
+    </div>
+    <!--./BasketTotalContainer-->
+
+    <div class="container mb-5 pb-5">
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 d-flex justify-content-around">
+                <a href="#" class="btn btn-delete-cart">Vider mon panier</a>
+                <a href="#" class="btn btn-confirm-cart ml-3">Finaliser ma commande</a>
+            </div>
+        </div>
+    </div>
+
+      <!--Footer-->
+    <div class="container-fluid pt-5 my-footer">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row d-flex justify-content-center py-2"> <img
+              src="images/logo-bg-blanc.png"  
+              id="logo-footer"          
+              alt="..."
+            /> </div>
+            <div class="row d-flex justify-content-center py-2 px-5">
+              <h5>ZinaStore votre meilleur boutique de vente d'accessoires en ligne</h5>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row d-flex justify-content-center py-2">
+              <h3>Liens utiles</h3>
+            </div>
+      
+            <a href="" class="nav-link row d-flex justify-content-center">ACCUEIL</a>
+            <a href="" class="nav-link row d-flex justify-content-center">CATEGORIES</a>
+            <a href="" class="nav-link row d-flex justify-content-center">PRODUITS</a>
+            <a href="" class="nav-link row d-flex justify-content-center">MEILLEURES VENTES</a>
+           
+          </div>
+          <div class="col-md-4">
+            <div class="row d-flex justify-content-center py-2">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="row d-flex justify-content-center py-2 px-5">
+              S'inscrire à notre newsletter pour recevoir tous nos nouvelles
+            </div>
+            <div class="row px-5 py-2">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control newsletter-input" placeholder="Entrer votre adresse mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-heart">S'abonner</button>
+                </div>
+              </div>
+            </div>
+              <div class="row d-flex justify-content-center pb-3">
+                <i class="fab fa-facebook fa-2x pr-3 social-media-icon"></i>
+                <i class="fab fa-instagram fa-2x pr-3 social-media-icon"></i>
+                <i class="fab fa-twitter fa-2x pr-3 social-media-icon"></i>
+              </div>
+          </div>
+        </div>
+      </div>
+      <!--./Footer-->
+  
+      <!--Scripts JS-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      <script src="js/bootstrap.js"></script>    
+      <script src="js/dark-mode.js"></script>
+      <script src="js/main.js"></script>
+</body>
+</html>
