@@ -27,13 +27,13 @@ let products = [
         inCart : 0
     },
     {
-        productName : "Lunettes Rayban",
+        productName : "Lunettes",
         price : 99,
         tag : "sincerely-media-d05w6_7FaPM-unsplash.jpg",
         inCart : 0
     },
     {
-        productName : "Casquette pour homme",
+        productName : "Casquette",
         price : 99,
         tag : "yang-deng-2loKxdi6Hmo-unsplash.jpg",
         inCart : 0
@@ -141,51 +141,44 @@ function displayCart() {
         
         productContainer.innerHTML = `
             <div class="container-fluid products-container my-5">
-                <div class="row product-header">
-                <div class="col-md-2"></div>
-                <div class="col-md-3 product-title h3">Produit</div>
-                <div class="col-md-2 product-price h3">Prix unitaire</div>
-                <div class="col-md-2 quantity h3">Quantité</div>
-                <div class="col-md-2 subtotal h3">Sous total</div>
-                <div class="col-md-1 delete-item"></div>
+                <div class="d-flex justify-content-around product-header">
+                <div class=""></div>
+                <div class="product-title h3">Produit</div>
+                <div class="product-price h3">Prix unitaire</div>
+                <div class="quantity h3">Quantité</div>
+                <div class="subtotal h3">Sous total</div>
+                <div class="delete-item"></div>
             </div>
         `;
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-
             
-                <div class="row py-2">
-                    <div class="col-md-2"> <img class="product-image" src="/images/${item.tag}"></div>
-                    <div class="col-md-3 h5"> ${item.productName} </div>
-                    <div class="col-md-2 h5"> ${item.price},00 DT</div>
-                    <div class="col-md-2 h5"> <i class="fas fa-minus-circle"></i>
-                    ${item.inCart}
-                    <i class="fas fa-plus-circle"></i></div>
-                    <div class="col-md-2 h5">${item.inCart * item.price},00 DT</div>
-                    <div class="col-md-1 delete"><i class="fas fa-trash-alt"></i></div>
-                </div>
-            </div> 
+            
+            <div class="d-flex justify-content-around py-2">
+                <div class=""> <img class="product-image" src="/images/${item.tag}"></div>
+                <div class="product-title h5"> ${item.productName} </div>
+                <div class="product-price h5"> ${item.price},00 DT</div>
+                <div class="quantity h5"> <i class="fas fa-minus-circle"></i>
+                ${item.inCart}
+                <i class="fas fa-plus-circle"></i></div>
+                <div class="subtotal h5">${item.inCart * item.price},00 DT</div>
+                <div class="delete"><i class="fas fa-trash-alt"></i></div>
+            </div>
+          
            
             `
         })
 
         productContainer.innerHTML += `
         <div class="container-fluid basketTotalContainer my-5">
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 h2">Total</div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-3"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2"></div>
-                <div class="col-md-2 h3">${cartCost},00 DT</div>
-                <div class="col-md-1"></div>
+        <div class="row d-flex justify-content-end">
+            <div class="total h3">Total</div>
+            <div class="col-md-2"></div> 
+        </div>
+            <div class="row d-flex justify-content-end">
+
+                <div class="total h3">${cartCost},00 DT</div>
+                <div class="col-md-2"></div> 
             </div>
          </div>
         `

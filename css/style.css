@@ -12,8 +12,8 @@ body {
 }
 
 .dark-theme {
-  background-color: var(--color-black);
-  color: var(--color-grey);
+  --color-black: #f5f5f5;
+  --color-grey: #161616;
 }
 
 #logo {
@@ -36,20 +36,12 @@ body {
 }
 
 .input-search {
-  width: 15rem;
+  width: 10rem !important;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
 .input-search:focus {
   box-shadow: 0 0 0 0.2rem #eda45b7e;
-}
-
-i {
-  color: var(--color-black);
-}
-
-a i {
-  color: var(--color-black);
 }
 
 .nav-link {
@@ -108,11 +100,12 @@ nav {
 }
 
 .card-text {
-  color: green;
+  color: #161616;
   font-weight: bolder;
 }
 
 .card-title {
+  color: #161616;
   font-weight: bolder;
 }
 
@@ -127,6 +120,10 @@ nav {
 
 .fa-trash-alt {
   color: #dc3545;
+}
+
+.fa-shopping-bag {
+  color: var(--color-black);
 }
 
 .btn-confirm-cart {
@@ -157,6 +154,37 @@ nav {
 
 .my-footer {
   box-shadow: 10px 3px 20px rgba(142, 142, 143, 0.2);
+}
+
+@media screen and (max-width: 800px) and (min-width: 450px) {
+  .product-image {
+    width: 80px !important;
+    height: 80px !important;
+  }
+
+  .product-title, .product-price, .quantity, .subtotal, .total {
+    font-size: 1rem !important;
+  }
+
+  .quantity {
+    margin-right: -0.7rem !important;
+    margin-left: -0.7rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .product-image {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .product-title, .product-price, .subtotal, .total, .quantity {
+    font-size: 0.9rem !important;
+  }
+
+  .quantity {
+    margin-right: -0.9rem !important;
+    margin-left: -0.9rem !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
