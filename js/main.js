@@ -4,55 +4,55 @@ let carts = document.querySelectorAll('.btn-shop');
 let products = [
     {
         productName : "Sac à main couffin",
-        price : 70,
+        price : 89.99,
         tag : "arnel-hasanovic-jJqd2mc-M9Q-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Sac Gucci",
         tag : "james-ree-ZmeFtu11Hpc-unsplash.jpg",
-        price : 56,
+        price : 570,
         inCart : 0
     },
     {
         productName : "Lunettes optiques",
-        price : 105,
+        price : 320,
         tag : "lensabl-0GfPlommtxM-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Bague",
-        price : 99,
+        price : 985,
         tag : "sabrinna-ringquist-kuko1hX_kXw-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Lunettes",
-        price : 99,
+        price : 950,
         tag : "sincerely-media-d05w6_7FaPM-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Casquette",
-        price : 99,
+        price : 160,
         tag : "yang-deng-2loKxdi6Hmo-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Sac rouge",
-        price : 99,
+        price : 749,
         tag : "artem-beliaikin-hg9da2n4QD8-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Sac pastel",
-        price : 99,
+        price : 360,
         tag : "creative-headline-APNnyM36puU-unsplash.jpg",
         inCart : 0
     },
     {
         productName : "Bague de fiancialles",
-        price : 99,
+        price : 1029,
         tag : "sabrinna-ringquist-ZWwC_6VfdAU-unsplash.jpg",
         inCart : 0
     },
